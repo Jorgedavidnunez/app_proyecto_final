@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".recycleview">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:onClick="expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:contentPadding="20dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:id="@+id/layout_segundo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+
+
+            <TextView
+                android:id="@+id/txt_IdProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="prueba"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_500"/>
+
+
+            <TextView
+                android:id="@+id/txt_Producto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="UserId"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/txt_marca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="title"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txt_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="title"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txt_imagen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="title"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txt_precio_costo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="title"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txt_precio_venta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="title"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txt_existencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="title"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txt_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="title"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
